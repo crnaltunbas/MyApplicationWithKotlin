@@ -74,6 +74,74 @@ class MainActivity : AppCompatActivity() {
         val ornekFloat : Float = 2.25f
         println(ornekFloat * 2)
 
+        // UNSİGNED İNTEGER
+        // Unsigned İnteger farkı negatif sayıları desteklemez. Sadece pozitifleri kullanır
+        // İki kat daha fazla kapasitesi oluyor
+
+        val unsignedByte: UByte = 20u
+        val unsignedInt: UInt = 20u
+        val unsignedShort: UShort = 20u
+        val unsignedLong: ULong = 20u
+
+
+        // STRİNG
+        println("---------------STRİNG----------")
+
+        val benimStringim = "Benim Stringim"
+        println(benimStringim)
+        val ornekString: String = "Ornek String"
+
+        val isim = "Ceren"
+        println(isim.uppercase())
+
+        val  soyisim = "Altunbas"
+        val xyz = (isim+ " "+ soyisim)
+        println(xyz.uppercase())
+        println(xyz.lowercase())
+        println(xyz.length)
+
+        val benimStr :String
+        // Buraya belli başlı farklı kodlar yazdıktan sonra değer atayabilir veya değer vermeyebiliriz
+        benimStr  = "Benim Yeni Stringim"    // Bu işleme initializer denir(init, initialize)
+
+        // Conversion
+
+        val yas = "25"
+        val ornekDeger = "20"
+
+        val yasInt = yas.toInt() //  Yani bir veri tipini başka bir veri tipine dönüştürür
+        println(yasInt * 20)
+
+        // BOOLEAN
+        println("---------------BOOLEAN----------")
+
+        var  benimBool : Boolean = true
+        benimBool = false
+
+        println(3 > 5)
+        println(3 < 5)
+        println(3 == 3)
+        println(3 != 5)
+
+        val  userAge = "24"
+        println(userAge.toInt() > 18)
+
+        // < küçüktür
+        // > büyüktür
+        // <= küçük eşittir
+        // >= büyük eşittir
+        // == eşittir
+        // != eşit değildir
+        // && ve
+        // || veya
+
+        println(4>3 && 3>5)
+        println(4>3 || 3>5)
+
+
+
+
+
 
 
 
