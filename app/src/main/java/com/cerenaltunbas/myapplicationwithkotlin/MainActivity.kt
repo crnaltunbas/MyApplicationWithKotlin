@@ -138,6 +138,55 @@ class MainActivity : AppCompatActivity() {
         println(4>3 && 3>5)
         println(4>3 || 3>5)
 
+        // VERİ YAPILARI
+
+        // DİZİLER -- Array
+
+        println("---------------Array----------")
+
+        val stringOrnegi = "Ceren"
+        val benimDizim = arrayOf("Ceren", "Ahmet", "Mehmet")
+        println(benimDizim[0])
+        println(benimDizim[1])
+        println(benimDizim.last()) // son elemanı getirir
+        println(benimDizim.shuffle()) // diziyi karıştırır
+        benimDizim[1] = "Burak" // Arraylerde elemanlar değiştirilebilir ancak ekleme yapılamaz
+        println(benimDizim[1])
+        println(benimDizim.get(1)) // Üstekiyle aynı işlevi görür
+        println(benimDizim.size) // Dizinin boyutunu verir
+
+        // LİSTELER
+
+        println("---------------ArrayList----------")
+        val isimListesi = arrayListOf("Ceren", "Ahmet", "Mehmet")
+        println(isimListesi[0])
+        println(isimListesi.get(1))
+        println(isimListesi.size)
+        // isimListesi.clear() // Listeyi temizler
+        // isimListesi.remove() // Listedeki elemanı siler
+
+        val karisikArrayList = arrayListOf<Any>() // Her veri tipini içerebilir. Any yerine veri tipi yazılır
+        karisikArrayList.add("Ceren") // Listelerde eleman ekleme yapılabilir.
+        karisikArrayList.add(24)
+        karisikArrayList.add(true)
+
+        val numaraListesi = ArrayList<Int>()// Int veri tipinde bir liste oluşturduk
+        val digerOrnekListe = arrayListOf<Int>()
+
+        digerOrnekListe.add(10)
+        digerOrnekListe.add(20)
+        digerOrnekListe.add(30)
+
+        numaraListesi.add(40)
+        numaraListesi.add(50)
+        numaraListesi.add(60)
+        println(numaraListesi[1] * digerOrnekListe[2])
+
+
+
+
+
+
 
 
 
